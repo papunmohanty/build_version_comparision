@@ -5,16 +5,16 @@ class InvalidBuild(ValueError):
 class  BuildVersion:
     """
     This class is a custom Data type for Build 
-    and to compare build for equality 
+    and to compare build for equality and in-equality
     such as 
         < (less than) 
-        > (greatr than) 
+        > (greater than) 
         == (equals to)
     
     parameters:
         build (str): Build number in string format E.g. 202007.12
     
-    Example:
+    example:
         BuildVersion(202007.6) < BuildVersion(202007.12)   # This returns True
         BuildVersion(202007.8) > BuildVersion(202007.7)    # This returns True
         BuildVersion(202007.12) == BuildVersion(202007.12) # This returns True
